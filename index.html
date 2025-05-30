@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Random Calc Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/81f652e334.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <head></head>
+    <main>
+      <div class="outter-wrapper">
+        <div class="main-card">
+          <h1>Random Calc Game ✨</h1>
+
+          <div class="start-zahl-container">
+            <div class="start-zahl" id="start-zahl">42</div>
+            <button class="icon-button" id="refresh-button">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </button>
+          </div>
+
+          <p>Wähle einen Rechenoperator:</p>
+          <div class="rechenoperatoren">
+            <button class="rechenoperator" id="plus">+</button>
+            <button class="rechenoperator" id="minus">-</button>
+            <button class="rechenoperator" id="geteilt">/</button>
+            <button class="rechenoperator" id="multiplizieren">*</button>
+          </div>
+
+          <form>
+            <label for="form-name">Nenne eine Zahl:</label>
+            <div class="form-reihe">
+              <input
+                class="no-spinner"
+                type="number"
+                id="deine-zahl"
+                placeholder="Deine Zahl"
+              />
+              <button class="text-button" id="rechnen-button">Rechnen</button>
+            </div>
+          </form>
+
+          <div class="ergebnis-container">
+            <div class="ergebnis" id="ergebnis">= ?</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

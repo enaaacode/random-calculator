@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+:root {
+  --main-background-color: rgb(232, 232, 232);
+  --main-card-background-color: white;
+  --color-text: rgb(74, 63, 130);
+  --button-bg-color: rgb(74, 63, 130);
+  --button-hover-color: rgb(154, 82, 199);
+  --button-text-color: white;
+  --focus-color: #6c63ff;
+  --border-radius: 0.75rem;
+  --small-border-radius: 0.5rem;
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: "Outfit", sans-serif;
+  color: var(--color-text);
+}
+
+.outter-wrapper {
+  padding: 2rem;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.main-card {
+  background-color: var(--main-card-background-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 1px 12px rgba(3, 7, 18, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.start-zahl-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-zahl,
+.ergebnis {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  background-color: #efefef;
+  border-radius: var(--border-radius);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  color: var(--focus-color);
+}
+
+.icon-rotate {
+  animation: rotate-icon 0.5s linear;
+}
+
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.text-button {
+  display: flex;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  padding: 0.75rem;
+  border-radius: var(--small-border-radius);
+}
+
+.text-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.text-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-reihe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+input::placeholder {
+  font-family: "Outfit", sans-serif;
+  color: #b0b0b0;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid rgb(220, 220, 220);
+  border-radius: var(--small-border-radius);
+  color: var(--focus-color);
+  font-family: "Outfit", sans-serif;
+}
+
+input:focus {
+  border-color: var(--focus-color);
+  outline: none;
+}
+
+/* Stepper-Buttons (▲ ▼) entfernen (cross-browser) */
+/* Für Chrome, Safari, Edge */
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Für Firefox */
+.no-spinner {
+  -moz-appearance: textfield;
+}
+
+.rechenoperatoren {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.rechenoperator {
+  /* Button */
+  flex: 1;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  text-align: center;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.rechenoperator:hover,
+.rechenoperator.aktiv {
+  background-color: var(--button-hover-color);
+  transform: scale(1.05);
+}
