@@ -5,16 +5,12 @@ Dieses kleine Web-Spiel kombiniert einfache Rechenoperationen mit Zufall und ein
 
 ![Screenshot des Rechners](/random_calculator_screenshot.png)
 
----
-
 ## 🤔 Was macht dieser Rechner?
 
 - Bei jedem Klick auf den Refresh-Button wird eine neue Startzahl generiert.
 - Du wählst einen Rechenoperator: `+`, `−`, `×`, `/`
 - Du gibst eine eigene Zahl ein.
 - Du bekommst ein korrektes Ergebnis – berechnet auf Basis der aktuellen Startzahl.
-
----
 
 ## ✨ Features
 
