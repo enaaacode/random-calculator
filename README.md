@@ -3,7 +3,7 @@
 Ein Taschenrechner mit Twist: Die Startzahl ist zufällig, der Rest ganz real.  
 Dieses kleine Web-Spiel kombiniert einfache Rechenoperationen mit Zufall und einem cleanen, liebevoll gestalteten UI.
 
-![Screenshot des Rechners](/random_calculator_screenshot.png)
+![Screenshot des Rechners](assets/random_calculator_screenshot.png)
 
 ## 🤔 Was macht dieser Rechner?
 
