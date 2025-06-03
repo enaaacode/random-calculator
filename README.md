@@ -1,21 +1,21 @@
 # 🎲 Random Calculator
 
-Ein Taschenrechner mit Twist: Die Startzahl ist zufällig, der Rest ganz real.  
-Dieses kleine Web-Spiel kombiniert einfache Rechenoperationen mit Zufall und einem cleanen, liebevoll gestalteten UI.
+A calculator with a twist: The starting number is random – the rest is all real.  
+This little web game combines basic math operations with randomness and a clean, lovingly crafted UI.
 
-![Screenshot des Rechners](assets/random_calculator_screenshot.png)
+![Screenshot of the calculator](assets/random_calculator_screenshot.png)
 
-## 🤔 Was macht dieser Rechner?
+## 🤔 What does this calculator do?
 
-- Bei jedem Klick auf den Refresh-Button wird eine neue Startzahl generiert.
-- Du wählst einen Rechenoperator: `+`, `−`, `×`, `/`
-- Du gibst eine eigene Zahl ein.
-- Du bekommst ein korrektes Ergebnis – berechnet auf Basis der aktuellen Startzahl.
+- Every time you click the refresh button, a new starting number is generated.
+- You choose an operator: `+`, `−`, `×`, `/`
+- You enter your own number.
+- You get a correct result – calculated based on the current random start value.
 
 ## ✨ Features
 
-- Zufällige Startzahl bei jedem Klick
-- Rechenoperationen mit Echt-Ergebnis
-- Visual Feedback durch Operator-Highlighting & Animation
-- Stylisches UI mit CSS-Variablen
-- Cleanes HTML, CSS & Vanilla JavaScript
+- Randomized starting number on every click
+- Real math operations with accurate results
+- Visual feedback through operator highlighting & animations
+- Stylish UI using CSS variables
+- Clean HTML, CSS & Vanilla JavaScript
